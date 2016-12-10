@@ -3,3 +3,10 @@
 A 30-day video tutorial series for people with no programming experience that want to learn how to code.
 
 Here are the solutions to all the HackerRank challenge questions For this series.
+
+##### The following is the list of Solutions:-
+#
+#### 0. [Day0](https://github.com/sagarchoudhary96/30-Days-Of-Code/Day0)
+#### 1. [Day1](https://github.com/sagarchoudhary96/30-Days-Of-Code/Day1)
+#### 2. [Day2](https://github.com/sagarchoudhary96/30-Days-Of-Code/Day2)
+#### 3. [Day3](https://github.com/sagarchoudhary96/30-Days-Of-Code/Day3)
