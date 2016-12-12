@@ -12,22 +12,23 @@ public class Solution {
 
         S = scanner.nextLine();
     }
-    public void checkString(){
+    public void printEvenIndexChar(){
+        int len = S.length();
+        for (int i = 0;i < len; i++){
+            if(i%2 ==0)
+                System.out.print(S.charAt(i));
+        }
 
-            int flag=0;
-            int n = S.length();
-            for(int i=1,j=n-1;i<n && j>=1;i++,j--){
-                if(Math.abs(S.charAt(i)-S.charAt(i-1))!=Math.abs(S.charAt(j)-S.charAt(j-1)))
-                {
-                    flag=1;
-                    break;
-                }
-            }
-             if(flag==1)
-                System.out.println("Not Funny");
-             else
-               System.out.println("Funny");
-         }
+    }
+
+    public void printOddIndexChar(){
+        int len = S.length();
+        for (int i = 0;i < len; i++){
+            if(i%2 !=0)
+                System.out.print(S.charAt(i));
+        }
+
+    }
 
 
     public static void main(String[] args) {
@@ -37,7 +38,10 @@ public class Solution {
 
         for(int a0=0;a0<T;a0++){
             num.setString();
-            num.checkString();
+            num.printEvenIndexChar();
+            System.out.print(" ");
+            num.printOddIndexChar();
+            System.out.print("\n");
         }
     }
 }
