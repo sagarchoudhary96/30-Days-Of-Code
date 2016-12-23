@@ -1,6 +1,5 @@
 public static Node removeDuplicates(Node head) {
       //Write your code here
-        Node nextNode = head.next;
         Node current = head;
 
       while(current.next!= null){
