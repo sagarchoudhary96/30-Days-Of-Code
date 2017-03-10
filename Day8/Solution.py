@@ -8,7 +8,6 @@ while (1):
     name = raw_input()
     if (name == temp):
         break
-    temp = name
     if(phonebook.has_key(name)):
         print name + "=" + phonebook[name]
     else:
