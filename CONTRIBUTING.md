@@ -22,7 +22,6 @@ If you come across a **new** Issue or looking for adding new Solutions, you need
  *  Clone your forked repository to your local.
  *  Create a new Branch from master branch.
  *  Make changes/addition to it and commit to your new branch.
- *  You need to squash your all new commits into one. you can read about squashing commits into one [here](https://www.internalpointers.com/post/squash-commits-into-one-git).
  * Make sure to add proper commit message describing what all question solutions you added/fixed. for e.g
    * if new solution added for day 1 in python language:
     ```
