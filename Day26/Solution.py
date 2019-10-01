@@ -1,8 +1,8 @@
-da, ma, ya = raw_input().split(' ')
+da, ma, ya = input().split(' ')
 da = int(da)
 ma = int(ma)
 ya = int(ya)
-de, me, ye = raw_input().split(' ')
+de, me, ye = input().split(' ')
 de = int(de)
 me = int(me)
 ye = int(ye)
@@ -15,5 +15,4 @@ if(ye==ya):
 elif(ye < ya):
     fine = 10000
 
-print fine
-  
+print( fine )
