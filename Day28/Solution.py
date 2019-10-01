@@ -4,10 +4,10 @@ import sys
 import re
 
 
-N = int(raw_input().strip())
+N = int(input().strip())
 names = []
-for a0 in xrange(N):
-    firstName,emailID = raw_input().strip().split(' ')
+for a0 in range(N):
+    firstName,emailID = input().strip().split(' ')
     firstName,emailID = [str(firstName),str(emailID)]
     match = re.search(r'[\w\.-]+@gmail.com', emailID)
 
@@ -15,4 +15,4 @@ for a0 in xrange(N):
         names.append(firstName)
 names.sort()
 for name in names:
-    print name
+    print( name )
