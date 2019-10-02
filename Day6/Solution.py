@@ -16,9 +16,7 @@ def printOddIndexChar(s):
         output += s[i]
     return output
 
-t = int(raw_input())
+t = int(input())
 for a0 in range(0,t):
-    s = raw_input()
-    print printEvenIndexChar(s) + " " + printOddIndexChar(s)
-
-    
+    s = input()
+    print(printEvenIndexChar(s) + " " + printOddIndexChar(s))

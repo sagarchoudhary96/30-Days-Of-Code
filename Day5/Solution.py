@@ -3,6 +3,6 @@
 import sys
 
 
-N = int(raw_input().strip())
+N = int(input().strip())
 for i in range(1, 11):
-    print str(N) +" x " + str(i) + " = " + str(N*i)
+    print(str(N) +" x " + str(i) + " = " + str(N*i))
