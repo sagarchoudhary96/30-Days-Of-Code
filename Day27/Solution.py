@@ -1,20 +1,36 @@
-print "3"
-print "4 3"
-print "-1 0 1 4"
-print "5 3"
-print "0 2 -4 -6 9"
-print "6 4"
-print "1 0 -3 4 -2 7"
-t = int(raw_input())
-for a0 in xrange(t):
-    count=0
-    n,k = map(int,raw_input().split())
-    a = [int(i) for i in raw_input().split()]
-    for a_i in xrange(n):
-        if(a[a_i]<=0):
-            count+=1
-    if(count>=k):
-        print "NO"
-    else:
-        print "YES"
+def minimum_index(seq):
+    if len(seq) == 0:
+        raise ValueError("Cannot get the minimum value index from an empty sequence")
+    min_idx = 0
+    for i in range(1, len(seq)):
+        if seq[i] < seq[min_idx]:
+            min_idx = i
+    return min_idx
+
+class TestDataEmptyArray(object):
+    
+    @staticmethod
+    def get_array():
+        return []
+
+class TestDataUniqueValues(object):
+
+    @staticmethod
+    def get_array():
+        return [7, 4, 3, 8, 14]
+
+    @staticmethod
+    def get_expected_result():
+        return 2
+
+class TestDataExactlyTwoDifferentMinimums(object):
+
+    @staticmethod
+    def get_array():
+        return [7, 4, 3, 8, 3, 14]
+
+    @staticmethod
+    def get_expected_result():
+        return 2
+
 
