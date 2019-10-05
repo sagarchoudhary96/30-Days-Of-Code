@@ -29,7 +29,7 @@ If you come across a **new** Issue or looking for adding new Solutions, you need
     ```
    * if you made changes to existing solution of day 1 of python to make it run with python3, then:
    ```
-   Update: solution for [Day 1] in [Python] lanuage to run with python v3.
+   Update: solution for [Day 1] in [Python] language to run with python v3.
    ```
  * Create a PR to this Repoository from your forked repository providing description of what you did.
  * Once Reviewed, It will be merged to the Repo.
