@@ -1,36 +1,67 @@
-#include <cmath>
-#include <cstdio>
+#include <stdexcept>
+#include <cassert>
+#include <set>
 #include <vector>
 #include <iostream>
 #include <algorithm>
 using namespace std;
 
- int main(){
-    cout<<"3"<<endl;
-    cout<<"4 3"<<endl;
-    cout<<"-1 0 1 4"<<endl;
-    cout<<"5 3"<<endl;
-    cout<<"0 2 -4 -6 9"<<endl;
-    cout<<"6 4"<<endl;
-    cout<<"1 0 -3 4 -2 7"<<endl;
-
-    int t;
-    cin >> t;
-    for(int a0 = 0; a0 < t; a0++){
-        int n;
-        int k;
-        int count=0;
-        cin >> n >> k;
-        vector<int> a(n);
-        for(int a_i = 0;a_i < n;a_i++){
-           cin >> a[a_i];
-            if(a[a_i]<=0)
-                count++;
-        }
-        if(count>=k)
-            cout<<"NO \n";
-        else
-            cout<<"YES \n";
-    }
-    return 0;
+int minimum_index(vector<int> seq) {
+	if (seq.empty()) {
+		throw invalid_argument("Cannot get the minimum value index from an empty sequence");
+	}
+	int min_idx = 0;
+	for (int i = 1; i < seq.size(); ++i) {
+		if (seq[i] < seq[min_idx]) {
+			min_idx = i;
+		}
+	}
+	return min_idx;
 }
+
+class TestDataEmptyArray {
+public:
+	static vector<int> get_array() {
+		vector<int> vect{};
+		return vect;
+	}
+
+};
+
+class TestDataUniqueValues {
+public:
+	static vector<int> get_array() {
+		vector<int> vect{ 23,5,8,12,7 };
+		return vect;
+	}
+
+	static int get_expected_result() {
+		return 1;
+	}
+
+};
+
+class TestDataExactlyTwoDifferentMinimums {
+public:
+	static vector<int> get_array() {
+		vector<int> vect{ 9,23,3,8,12,3,7 };
+		return vect;
+	}
+
+	static int get_expected_result() {
+		return 2;
+	}
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
