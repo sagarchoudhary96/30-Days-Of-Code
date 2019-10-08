@@ -3,10 +3,10 @@
 import sys
 
 
-S = raw_input().strip()
+S = input().strip()
 try: 
     r = int(S)
-    print r
+    print(r)
 except ValueError:
-    print "Bad String"
+    print("Bad String")
 

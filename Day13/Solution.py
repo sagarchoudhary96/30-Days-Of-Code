@@ -4,4 +4,4 @@ class MyBook(Book):
         self.price = price
         
     def display(self):
-        print "Title: %s\nAuthor: %s\nPrice: %s" %(title, author, price)
+        print("Title: %s\nAuthor: %s\nPrice: %s" %(title, author, price))
