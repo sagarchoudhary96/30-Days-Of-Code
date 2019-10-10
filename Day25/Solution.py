@@ -1,20 +1,16 @@
 import math
+
+def check_prime(num):
+    if num is 1:
+        return "Not prime"
+    sq = int(math.sqrt(num))
+    for x in range(2, sq+1):
+        if num % x is 0:
+            return "Not prime"
+    return "Prime"
+
+
 t = int(input())
-for i in range(0, t):
-    num = int(input())
-
-    if (num == 2):
-        print ("Prime")
-    elif (num < 2):
-        print ("Not prime")
-    else:
-        flag = 0
-        for j in range(2, math.ceil(math.sqrt(num)) + 1):
-            if (num % j == 0):
-                flag = 1
-                break
-
-        if (flag == 0):
-            print ("Prime")
-        else:
-            print ("Not prime")
+for i in range(t):
+    number = int(input())
+    print(check_prime(number))
