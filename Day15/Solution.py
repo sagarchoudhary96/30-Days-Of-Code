@@ -1,10 +1,8 @@
 def insert(self,head,data): 
-        new_node = Node(data)
-        if (head == None):
-            head = new_node
-        else:
-            temp = head
-            while (temp.next!=None):
-                temp = temp.next
-            temp.next = new_node
-        return head
+    if head is None:
+        head = Node(data)
+    elif head.next is None:
+        head.next = Node(data)
+    else: 
+        self.insert(head.next, data)
+    return head
