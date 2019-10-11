@@ -39,5 +39,9 @@ Here are the solutions to all the HackerRank challenge questions For this series
 - **Day9**: [Question](https://www.hackerrank.com/challenges/30-recursion/problem) [Solutions](https://github.com/sagarchoudhary96/30-Days-Of-Code/tree/master/Day9) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Day19**: [Question](https://www.hackerrank.com/challenges/30-interfaces/problem) [Solutions](https://github.com/sagarchoudhary96/30-Days-Of-Code/tree/master/Day19) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 **Day29**: [Question](https://www.hackerrank.com/challenges/30-bitwise-and/problem) [Solutions](https://github.com/sagarchoudhary96/30-Days-Of-Code/tree/master/Day29)
 
+## Contributing
+
+Everyone is welcomed to contribute to this project. You can contribute either by submitting bugs or suggesting improvements by opening an issue on GitHub. please see the [CONTRIBUTING](https://github.com/sagarchoudhary96/30-Days-Of-Code/blob/master/CONTRIBUTING.md) guidelines for more information.
+
 ## LICENSE
-[MIT License](https://github.com/sagarchoudhary96/30-Days-Of-Code/blob/master/LICENSE.md)
+This project is licensed under the [MIT License](https://github.com/sagarchoudhary96/30-Days-Of-Code/blob/master/LICENSE.md).
