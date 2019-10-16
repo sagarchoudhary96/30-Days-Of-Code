@@ -1,17 +1,18 @@
 from collections import deque
+
 class Solution:
     def __init__(self):
-        self.st = []
-        self.que = deque()
-        
-    def pushCharacter(self, num):
-        self.st.append(num)
-        
+        self.stack = deque()
+        self.queue = deque()
+    
+    def pushCharacter(self,char):
+        self.stack.append(char)
+    
     def popCharacter(self):
-        return self.st.pop()
-        
-    def enqueueCharacter(self, num):
-        self.que.append(num)
-        
+        return self.stack.pop()
+    
+    def enqueueCharacter(self,char):
+        self.queue.append(char)
+    
     def dequeueCharacter(self):
-        return self.que.popleft()
+        return self.queue.popleft();
