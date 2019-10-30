@@ -1,6 +1,4 @@
 // Write your code here
-    func printArray<Element>(array: [Element]) {
-        for element in array {
-            print(element)
-        }
+    func printArray(array: [T]) {
+        array.forEach { print($0 )}
     }
