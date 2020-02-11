@@ -17,7 +17,7 @@ public class Person {
         String message;
         if(age<13)
             message = "You are young.";
-        else if(age>=13 && age<18)
+        else if(age<18)
                 message = "You are a teenager.";
             else
                 message = "You are old.";
